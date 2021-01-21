@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Shop Cart Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <listeners>
+    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Login page Test(failed)" verbose="3">
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="loginWithNegativeDataTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Login page Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Accounts page Test(failed)" verbose="3">
+    <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest">
+        <methods>
+          <include name="accountsPageSetup"/>
+          <include name="setUp"/>
+          <include name="searchTest" invocation-numbers="2 3 4 5"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.AccountsPageTest -->
+    </classes>
+  </test> <!-- Accounts page Test(failed) -->
+</suite> <!-- Failed suite [Shop Cart Test automtion regression suite] -->
