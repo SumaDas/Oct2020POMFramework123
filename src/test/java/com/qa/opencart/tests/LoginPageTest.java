@@ -64,7 +64,7 @@ public class LoginPageTest extends BaseTest {
 	 * @param username
 	 * @param password
 	 */
-	@Test(priority = 4, enabled = true,dataProvider = "getLoginNegativeData")
+	@Test(priority = 4, enabled = false,dataProvider = "getLoginNegativeData")
 	public void loginWithNegativeDataTest(String un, String pwd) {
 		//Assert.assertTrue(loginPage.loginWithNegativeData(un, pwd));
 		try {
@@ -79,7 +79,7 @@ public class LoginPageTest extends BaseTest {
 	 */
 	@Description("login test...")
 	@Severity(SeverityLevel.BLOCKER)
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void loginTest() {
 		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
