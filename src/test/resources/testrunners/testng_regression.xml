@@ -22,6 +22,20 @@
 		</classes>
 
 	</test>
+	
+	<test name="Register page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest" />
+		</classes>
+
+	</test>
+	
+	<test name="ForgotPassword page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.ForgotPasswordTest" />
+		</classes>
+
+	</test>
 
 </suite>
 
